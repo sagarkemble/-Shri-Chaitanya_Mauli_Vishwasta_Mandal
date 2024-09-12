@@ -5,6 +5,7 @@
     font-family: 'Poppins',sans-serif;
 }
 
+/* navigation */
 .nav{
     font-size: 3.5vw;
     background-color: #00D1FF;
@@ -17,8 +18,9 @@
 }
 .logocontainer{
     display: flex;
+    align-items: center;
 }
-.logo img{
+.logocontainer img{
     height: 10vw;
 }
 .name{
@@ -37,7 +39,6 @@
 }
 .links{
     opacity: 0;
-    height: 30vh;
     visibility: hidden;
     background-color: #00a2ff;
     transition: all 0.3s ;
@@ -56,8 +57,7 @@ nav ul li a{
     color: #fff;
 }
 .links ul{
-    padding: 0;
-    padding-top: 2vh;
+    padding: 2vh;
     margin: 0;
     display: flex;
     flex-direction: column;
