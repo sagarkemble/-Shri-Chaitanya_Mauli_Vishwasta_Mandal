@@ -17,8 +17,10 @@
     align-items: center;
 }
 .logocontainer{
+    position: relative;
     display: flex;
     align-items: center;
+    transform: translateX(-2.5vw);
 }
 .logocontainer img{
     height: 10vw;
