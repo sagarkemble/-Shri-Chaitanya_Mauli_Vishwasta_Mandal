@@ -79,3 +79,9 @@ function initializeSlider(sliderId) {
 // Initialize sliders
 initializeSlider('slider1');
 initializeSlider('slider2');
+
+
+function toggleMenu() {
+    const menuLinks = document.querySelector('.links');
+    menuLinks.classList.toggle('active');
+}
