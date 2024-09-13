@@ -148,6 +148,11 @@ nav ul li a{
 .slider .dots li.active{
     width: 30px;
 }
+@media screen and (max-width: 768px){
+    .slider{
+        height: 700px; /* Increase this value */
+    }
+}
 
 
 /* recentevents */
@@ -160,8 +165,11 @@ nav ul li a{
 }
 
 @media screen and (max-width: 768px){
-    .slider{
-        height: 400px;
+    .slider {
+        height: 65vh; /* Adjust the height based on the viewport height */
+    }
+    .slider .list img {
+        height: 100%;
     }
 }
 
@@ -180,10 +188,11 @@ nav ul li a{
 }
 .heading{
     color: #0D5BA3;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2em;
 }
 .description{
+    padding: 0 16px;
     margin-bottom: 6px;
     color: white;
     font-weight: 600;
