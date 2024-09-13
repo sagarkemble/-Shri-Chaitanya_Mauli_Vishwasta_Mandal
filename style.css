@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins',sans-serif;
+    /* overflow: hidden; */
 }
 
 /* navigation */
@@ -26,10 +27,15 @@
     height: 10vw;
 }
 .name{
+    color: #0D5BA3;
     margin-left: 15px;
     width: 40vw;
     font-size: 1em;
     font-weight: 500;
+}
+.togglebutton{
+    display: flex;
+    align-items: center;
 }
 .togglebutton img{
     height: 8vw;
@@ -40,9 +46,12 @@
     cursor: pointer;
 }
 .links{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
     opacity: 0;
     visibility: hidden;
-    background-color: #00a2ff;
+    background-color: #0D5BA3;
     transition: all 0.3s ;
     
 }
@@ -71,10 +80,92 @@ nav ul li a{
 
 
 
+/* herosectio */
 
 
 
 
+
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+
+
+/* recentevents */
+.recenteventsheading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px 0;
+    color: #0D5BA3;
+}
+
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
 
 
 
@@ -110,7 +201,9 @@ nav ul li a{
 }
 @media (min-width: 601px)
  {
-
+    body{
+        overflow: hidden;
+    }
     .underdevelopmentconatiner {
         justify-content: center;
         align-items: center;
@@ -130,4 +223,92 @@ nav ul li a{
         font-weight:500;
         font-size: 3vw;
     }
+}
+
+
+
+
+
+
+/* aboutus */
+.aboutus{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00D1FF;
+    /* width: 85vw; */
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 1rem;
+}
+.heading{
+    color: #0D5BA3;
+    font-weight: 600;
+    font-size: 2em;
+}
+.description{
+    margin-bottom: 6px;
+
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.button button{
+    margin-bottom: 6px;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    height: 2.5em;
+    width: 9em;
+    border: none;
+    border-radius: 10px;
+    background-color:#0D5BA3 ;
+    transition:all 0.2s;
+}
+.button button:active{
+    color:#0D5BA3 ;
+    background-color: white;
+
+}
+
+
+
+/* messagae1 */
+.message1{
+    overflow: hidden;
+    font-size:3.8vw;
+    display: flex;
+    align-items: center;
+}
+.line{
+    position: absolute;
+    background-color: #0D5BA3;
+    width: 100vw;
+    height: 2px;
+    transform: translateY(1.5em);
+
+}
+.tree,.school{
+    height: 3.8em;
+}
+
+.text{
+    color: #0D5BA3;
+line-height: 20px;
+text-align: center;
+font-weight:600 ;
+}
+.group1{
+    position: relative;
+    left: -4px;
+    display: flex;
+}
+.group2{
+    position: relative;
+    right: -4px;
+    display: flex;
 }
