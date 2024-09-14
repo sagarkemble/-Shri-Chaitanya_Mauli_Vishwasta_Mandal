@@ -11,17 +11,14 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+
+
+
 </head>
 
 <body>
-<!-- preloader -->
+    <!-- preloader -->
     <div id="preloader">
         <img src="images/loading.gif" alt="">
         <p class="loading">Loading</p>
@@ -31,7 +28,7 @@
 
     <!-- //underdevelopment -->
     <div class="underdevelopmentconatiner">
-        <img src="images/underdevelopment.jpg"class="underdevelopment" alt="">
+        <img src="images/underdevelopment.jpg" class="underdevelopment" alt="">
         <p>Desktop and Tablet website is under development</p>
     </div>
 
@@ -41,178 +38,210 @@
     <!-- navigation -->
     <nav>
         <div class="nav">
-        <div class="logocontainer">
+            <div class="logocontainer">
                 <img src="images/Chaitanya Mauli Logo PNG.png" alt="">
 
-            <div class="name">
-                Shri Chaitanya Mauli Vishwasta Mandal
+                <div class="name">
+                    Shri Chaitanya Mauli Vishwasta Mandal
+                </div>
+            </div>
+            <div class="togglebutton">
+                <img src="images/icons8-sun-50.png" alt="">
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
             </div>
         </div>
-        <div class="togglebutton">
-            <img src="images/icons8-sun-50.png" alt="">
+        <div class="links">
+            <ul id="menuList">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </div>
-        <div class="menu">
-            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+
+
+
+        <div class="homepagestartbutton"></div>
+    </nav>
+<!-- end navigation -->
+
+
+
+    <!-- herosection -->
+
+
+    <!-- Slider main container -->
+    <div class="swiper" id="swiper-1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/image1.jpeg" alt="Spain" />
+            </div> <!-- end swiper-slide -->
+            <div class="swiper-slide">
+                <img src="images/Pasted image (2).png" alt="Spain" />
+            </div> <!-- end swiper-slide -->
+            <div class="swiper-slide">
+                <img src="images/Pasted image.png" alt="Spain" />
+            </div> <!-- end swiper-slide -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+    </div>
+
+
+    <!-- end herosection -->
+
+    <!-- aboutus -->
+    <div class="aboutus">
+        <div class="heading">About us</div>
+        <div class="description">This orgnization Established in 1982, is a registered charitable trust working for
+            under privilaged sector of society.Engaged in dedicatedly providing
+            Holistic Daycare While leading Sanskar-varg Effectively and
+            Empowering women</div>
+        <div class="button">
+            <button>Know more</button>
         </div>
     </div>
-    <div class="links">
-        <ul id="menuList">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+<!-- end aboutus -->
+
+
+
+    <!-- message -->
+    <div class="message1">
+        <div class="group1">
+            <img src="images/school.png" alt="" class="school ">
+            <img src="images/tree.png" alt="" class="tree ">
+        </div>
+        <p class="text">Empowering Children Shaping Future</p>
+        <div class="group2">
+
+            <img src="images/tree.png" alt="" class="tree ">
+            <img src="images/school.png" alt="" class="school ">
+        </div>
+        <div class="line"></div>
     </div>
+ <!-- end message -->
 
 
+    <!-- recentevents -->
+    <!-- Slider main container -->
+    <div class="recentevents">
+        <p class="recentevents-heading">Recent events</p>
+        <div class="swiper" id="swiper-2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/image1.jpeg" alt="Spain" />
+                </div> <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="images/Pasted image (2).png" alt="Spain" />
+                </div> <!-- end swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="images/Pasted image.png" alt="Spain" />
+                </div> <!-- end swiper-slide -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-<div class="homepagestartbutton"></div>
-</nav>
-<!-- herosection -->
-<div class="slider" id="slider1">
-    <div class="list">
-        <div class="item">
-            <img src="images/image1.jpeg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/Pasted image.png" alt="">
-        </div>
-        <div class="item">
-            <img src="images/Pasted image (2).png" alt="">
-        </div>
-        <div class="item">
-            <img src="images/image1.jpeg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/Pasted image.png" alt="">
-        </div>
-    </div>
-    <div class="buttons">
-        <button id="prev"><</button>
-        <button id="next">></button>
-    </div>
-    <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-</div>
-
-
-
-<!-- aboutus -->
- <div class="aboutus">
-    <div class="heading">About us</div>
-    <div class="description">This orgnization Established in 1982, is a registered charitable trust working for under privilaged sector of society.Engaged in  dedicatedly providing 
-        Holistic Daycare While leading Sanskar-varg Effectively and
-        Empowering women</div>
-    <div class="button">
-        <button>Know more</button>
-    </div>
- </div>
-
-
-
-
- <!-- message -->
-  <div class="message1">
-    <div class="group1">
-        <img src="images/school.png" alt="" class="school ">
-        <img src="images/tree.png" alt="" class="tree ">
-    </div>
-    <p class="text">Empowering Children Shaping Future</p>
-    <div class="group2">
-
-        <img src="images/tree.png" alt="" class="tree ">
-        <img src="images/school.png" alt="" class="school ">
-    </div>
-    <div class="line"></div>
-  </div>
-
-
-
-<!-- recentevents -->
- <p class="recenteventsheading">Recent events</p>
- <div class="slider" id="slider2">
-    <div class="list">
-        <div class="item">
-            <img src="images/image1.jpeg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/Pasted image.png" alt="">
-        </div>
-        <div class="item">
-            <img src="images/Pasted image (2).png" alt="">
-        </div>
-        <div class="item">
-            <img src="images/image1.jpeg" alt="">
-        </div>
-        <div class="item">
-            <img src="images/Pasted image.png" alt="">
         </div>
     </div>
-    <div class="buttons">
-        <button id="prev"><</button>
-        <button id="next">></button>
-    </div>
-    <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-</div>
+<!--end recentevents -->
 
-<!-- ourmission -->
-<div class="aboutus">
-    <div class="heading">Our mission</div>
-    <div class="description">To offer , high-quality daycare services that support the development and well-being for children from low-income families.</div>
-    <div class="button">
-        <button>Know more</button>
-    </div>
- </div>
 
- 
-<!-- ourteam -->
-<div class="ourteamh"><p>Our team</p></div>
-<div class="swiper">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <div class="card">
-            <div class="post"><p>Founder</p></div>
-            <div class="image"><img src="images/profile-pic.png" alt=""></div>
-            <div class="membername"><p>Founder's name</p></div>
-            <div class="qualification"><p>Qualification</p></div>
-             </div> 
-      </div>
-      <div class="swiper-slide">        <div class="card">
-        <div class="post"><p>Founder</p></div>
-        <div class="image"><img src="images/profile-pic.png" alt=""></div>
-        <div class="membername"><p>Founder's name</p></div>
-        <div class="qualification"><p>Qualification</p></div>
-         </div> </div>
-      <div class="swiper-slide">        <div class="card">
-        <div class="post"><p>Founder</p></div>
-        <div class="image"><img src="images/profile-pic.png" alt=""></div>
-        <div class="membername"><p>Founder's name</p></div>
-        <div class="qualification"><p>Qualification</p></div>
-         </div> </div>
+    <!-- ourmission -->
+    <div class="aboutus">
+        <div class="heading">Our mission</div>
+        <div class="description">To offer , high-quality daycare services that support the development and well-being
+            for children from low-income families.</div>
+        <div class="button">
+            <button>Know more</button>
+        </div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <!-- <div class="swiper-button-prev"></div>
+    <!-- end zourmission -->
+
+
+
+
+    <!-- ourteam -->
+    <div class="ourteamh">
+        <p>Our team</p>
+    </div>
+    <div class="swiper" id="swiper-3">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="post">
+                        <p>Founder</p>
+                    </div>
+                    <div class="image"><img src="images/profile-pic.png" alt=""></div>
+                    <div class="membername">
+                        <p>Founder's name</p>
+                    </div>
+                    <div class="qualification">
+                        <p>Qualification</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="post">
+                        <p>Founder</p>
+                    </div>
+                    <div class="image"><img src="images/profile-pic.png" alt=""></div>
+                    <div class="membername">
+                        <p>Founder's name</p>
+                    </div>
+                    <div class="qualification">
+                        <p>Qualification</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="post">
+                        <p>Founder</p>
+                    </div>
+                    <div class="image"><img src="images/profile-pic.png" alt=""></div>
+                    <div class="membername">
+                        <p>Founder's name</p>
+                    </div>
+                    <div class="qualification">
+                        <p>Qualification</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="post">
+                        <p>Founder</p>
+                    </div>
+                    <div class="image"><img src="images/profile-pic.png" alt=""></div>
+                    <div class="membername">
+                        <p>Founder's name</p>
+                    </div>
+                    <div class="qualification">
+                        <p>Qualification</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div> -->
-  
-    <!-- If we need scrollbar -->
-    <!-- <div class="swiper-scrollbar"></div> -->
-  </div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <!--end ourteam -->
 
 
 
@@ -244,7 +273,7 @@
 
 
 
- 
+
 
     <script src="script.js"></script>
 </body>

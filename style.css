@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 3;
+    z-index: 4;
 }
 #preloader img{
     max-height: 150px;
@@ -26,7 +26,6 @@
     transform: translateY(-20px);
     
     font-size: clamp(16px, 4vw, 24px);
-    /* font-size: 4vw; */
 }
 
 /* navigation */
@@ -50,11 +49,11 @@
     height: 10vw;
 }
 .name{
-    color: #0D5BA3;
+    color: #0d5292;
     margin-left: 15px;
     width: 40vw;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 700;
 }
 .togglebutton{
     display: flex;
@@ -70,7 +69,7 @@
 }
 .links{
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     opacity: 0;
     visibility: hidden;
@@ -105,96 +104,30 @@ nav ul li a{
 
 /* herosection*/
 
-
-.slider{
-    width: 1300px;
-    max-width: 100vw;
-    height: 700px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
+#swiper-1{
+    height: 400px;
 }
-.slider .list{
-    position: absolute;
-    width: max-content;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    transition: 1s;
-}
-.slider .list img{
-    width: 1300px;
-    max-width: 100vw;
+/* #swiper-1 */
+#swiper-1 img{
     height: 100%;
     object-fit: cover;
 }
-.slider .buttons{
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
+
+#swiper-1 .swiper-pagination-bullet{
+    background-color: #D9D9D9;
+    opacity: 0.5;
+
 }
-.slider .buttons button{
-    display: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #fff5;
-    color: #fff;
-    border: none;
-    font-family: monospace;
-    font-weight: bold;
-}
-.slider .dots{
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-.slider .dots li{
-    list-style: none;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 10px;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-.slider .dots li.active{
-    width: 30px;
-}
-@media screen and (max-width: 768px){
-    .slider{
-        height: 700px; /* Increase this value */
-    }
+#swiper-1 .swiper-pagination-bullet-active{
+    background-color: #D9D9D9;
+    opacity: 1;
+
 }
 
 
-/* recentevents */
-.recenteventsheading{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 10px 0;
-    color: #0D5BA3;
-}
 
-@media screen and (max-width: 768px){
-    .slider {
-        height: 65vh; /* Adjust the height based on the viewport height */
-    }
-    .slider .list img {
-        height: 100%;
-    }
-}
+
+
 
 
 /* aboutus */
@@ -204,7 +137,6 @@ nav ul li a{
     flex-direction: column;
     align-items: center;
     background-color: #00D1FF;
-    /* width: 85vw; */
     padding: 10px 10px;
     margin: 10px 10px;
     font-size: 1rem;
@@ -282,11 +214,42 @@ font-weight:600 ;
 
 
 
+/* recentevets */
+.recentevents-heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px 0;
+    color: #0D5BA3;
+}
+#swiper-2{
+    height: 400px;
+}
+#swiper-2 img{
+    height: 100%;
+    object-fit: cover;
+}
+#swiper-2 .swiper-pagination-bullet{
+    background-color: #D9D9D9;
+    opacity: 0.5;
+
+}
+#swiper-2 .swiper-pagination-bullet-active{
+    background-color: #D9D9D9;
+    opacity: 1;
+
+}
 
 
 /* ourteam */
+#swiper-3{
+    width: 100%;
+}
+#swiper-3 .swiper-pagination-bullet-active{
+    background-color: #0D5BA3;
+    opacity: 1;
 
-
+}
 .ourteamh{
 text-align: center;
 color: #06414E;
@@ -300,11 +263,9 @@ padding: 15px 0;
     border-radius: 16px;
     background-color: #00D1FF;
     width: 80vw;
-    margin: 0 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .post{
@@ -328,10 +289,8 @@ padding: 15px 0;
 .card img{
     height: 160px;
 } 
-.swiper {
-    width: 100vw;
-    height: 350px;
-  }
+
+
 
 
 /* underdevlopment */
@@ -350,7 +309,7 @@ padding: 15px 0;
         display: flex;
         background-color: white;
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         width: 100vw;
         height: 100vh;
     }
