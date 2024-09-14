@@ -85,3 +85,7 @@ function toggleMenu() {
     const menuLinks = document.querySelector('.links');
     menuLinks.classList.toggle('active');
 }
+
+window.onload = function() {
+    document.getElementById("preloader").style.display = "none";
+};
