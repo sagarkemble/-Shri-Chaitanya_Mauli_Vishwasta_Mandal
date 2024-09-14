@@ -282,6 +282,58 @@ font-weight:600 ;
 
 
 
+
+
+/* ourteam */
+
+
+.ourteamh{
+text-align: center;
+color: #06414E;
+font-weight: 700;
+font-size: 3.5em;    
+padding: 15px 0;
+
+}
+.card{
+    padding-bottom: 30px;
+    border-radius: 16px;
+    background-color: #00D1FF;
+    width: 80vw;
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post{
+    padding: 10px;
+    color: #0D5BA3;
+    font-weight: 700;
+    font-size: 2em;
+}
+.membername {
+    text-align: center  ;
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+}
+.qualification{
+    
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.card img{
+    height: 160px;
+} 
+.swiper {
+    width: 100vw;
+    height: 350px;
+  }
+
+
 /* underdevlopment */
 .underdevelopmentconatiner{
     display: none;
@@ -311,6 +363,40 @@ font-weight:600 ;
         font-size: 3vw;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

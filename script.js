@@ -89,3 +89,42 @@ function toggleMenu() {
 window.onload = function() {
     document.getElementById("preloader").style.display = "none";
 };
+
+
+
+
+//out team slider
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    
+    autoplay: {
+        delay: 2500, // Optional: Automatically slide every 2.5 seconds
+      },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+
+
+
+
+
+
+
+
+
