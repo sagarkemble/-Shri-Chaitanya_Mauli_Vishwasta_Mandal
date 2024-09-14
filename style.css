@@ -19,11 +19,14 @@
     z-index: 3;
 }
 #preloader img{
+    max-height: 150px;
     height: 20vw;
 }
 #preloader p{
     transform: translateY(-20px);
-    font-size: 4vw;
+    
+    font-size: clamp(16px, 4vw, 24px);
+    /* font-size: 4vw; */
 }
 
 /* navigation */
