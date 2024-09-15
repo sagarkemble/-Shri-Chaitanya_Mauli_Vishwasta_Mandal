@@ -68,7 +68,7 @@ const swiper2 = new Swiper("#swiper-2", {
     direction: 'horizontal',
     slidesPerView: 1.3,
     centeredSlides: true,
-    spaceBetween: 40,
+    spaceBetween: 30,
     loop: true,
         autoplay: {
         delay:2500,
