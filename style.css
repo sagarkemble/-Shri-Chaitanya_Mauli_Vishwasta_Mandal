@@ -19,6 +19,7 @@
     --color2: #0d5292; 
     --color3: #00D1FF;
     --color4: rgb(255, 255, 255);
+    --color5: #CDEDFF;
 }
 @keyframes fade {
     from{
@@ -396,10 +397,14 @@ padding: 15px 0;
 }
 .card img{
     height: 160px;
+    width: 160px;
+    object-fit: cover;
+    border-radius: 80px;
 } 
 
 
 .reviews-wrapper{
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -418,12 +423,55 @@ padding: 15px 0;
     font-size: 2.8em;
     font-weight: 700;
 }
-.reviews-card-wrapper{
+.reviews-wrapper{
     display: flex;
     flex-direction: column;
 
+
+}
+.review-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: start; */
+    background-color: var(--color5);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 32px;
+}
+.comma {
+    transform: translateX(-10px);
+}
+.comma img{
+    height: 45px;
+
+}
+.comma-2{
+    transform: translateX(-20px);
+}
+.testimonial-description{
+    font-size: 0.8em;
+    text-align: start;
+    color: var(--color1);
+}
+.image-name-container{
+    display: flex;
+    align-items: center;
+}
+.name-address-container{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 
+
+.image-name-container .image{
+    border-radius: 30.5px;
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+    margin: 15px 0px;
+}
 /* underdevlopment */
 .underdevelopmentconatiner{
     display: none;
