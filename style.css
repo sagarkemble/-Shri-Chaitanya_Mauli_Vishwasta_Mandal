@@ -399,7 +399,30 @@ padding: 15px 0;
 } 
 
 
+.reviews-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reviews{
+    border-radius: 5px;
+    margin: 10px 10px;
+    background-color: #E5FAFF;
 
+}
+
+.reviews-wrapper .title{
+    margin: 20px 0px;
+    color: var(--color1);
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+.reviews-card-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
 
 /* underdevlopment */
 .underdevelopmentconatiner{
