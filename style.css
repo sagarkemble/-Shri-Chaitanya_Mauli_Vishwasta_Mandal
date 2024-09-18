@@ -20,6 +20,8 @@
     --color3: #00D1FF;
     --color4: rgb(255, 255, 255);
     --color5: #CDEDFF;
+    --color6: #E5FAFF;
+    
 }
 @keyframes fade {
     from{
@@ -404,7 +406,8 @@ padding: 15px 0;
 
 
 .reviews-wrapper{
-    margin-top: 15px;
+    background-color: var(--color5);
+    margin: 45px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -426,6 +429,8 @@ padding: 15px 0;
 .reviews-wrapper{
     display: flex;
     flex-direction: column;
+    background-color: var(--color6);
+    border-radius: 20px;
 
 
 }
