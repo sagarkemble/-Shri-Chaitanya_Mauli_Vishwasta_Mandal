@@ -295,9 +295,10 @@ nav ul li a{
     font-size:3.8vw;
     display: flex;
     align-items: center;
+    border-bottom: 2px solid var(--color2);
 }
 .line{
-    position: absolute;
+    position: relative;
     background-color: var(--color2);
     width: 100vw;
     height: 2px;
@@ -305,9 +306,14 @@ nav ul li a{
 
 }
 .tree,.school{
-    height: 3.8em;
+    height: 3em;
 }
-
+.school1{
+    margin-right: 10px;
+}
+.school2{
+    margin-right: 10px;
+}
 .text{
     color: var(--color2);
 line-height: 20px;
