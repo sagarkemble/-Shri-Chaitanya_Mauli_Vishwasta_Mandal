@@ -1,11 +1,30 @@
 
-function toggleMenu() {
-    const menuLinks = document.querySelector('.links');
-    menuLinks.classList.toggle('active');
-}
+// function toggleMenu() {
+//     const menuLinks = document.querySelector('.links');
+//     menuLinks.classList.toggle('active');
+// }
+function showlinks(){
+  const links=document.querySelector('.links');
+  const hamburger=document.querySelector('.hamburger');
+  const crossicon=document.querySelector('.crossicon');
+  links.style.display='initial';
+  hamburger.style.display='none';
+  crossicon.style.display='initial';
+};
+function hidelinks(){
+  const links=document.querySelector('.links');
+  const hamburger=document.querySelector('.hamburger');
+  const crossicon=document.querySelector('.crossicon');
+  links.style.display='none';
+  hamburger.style.display='initial';
+  crossicon.style.display='none';
+};
+
 
 window.onload = function() {
-    document.getElementById("preloader").style.display = "none";
+  document.getElementById("preloader").style.display = "none";
+  document.documentElement.style.overflow = "auto"; 
+  document.body.style.overflow = "auto"; 
 };
 
 

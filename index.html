@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="utilityclass.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -18,6 +17,8 @@
 </head>
 
 <body>
+
+
     <!-- preloader -->
     <div id="preloader">
         <img src="images/icons and illustrations/loading.gif" alt="">
@@ -45,13 +46,10 @@
                     Shri Chaitanya Mauli Vishwasta Mandal
                 </div>
             </div>
-            <div class="togglebutton">
-                <img src="images/icons and illustrations/sun.png" alt="" class="active">
-                <!-- <img src="images/icons8-moon-50.png" alt=""> -->
-            </div>
             <div class="menu">
-                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-            </div>
+                <i class="fa-solid fa-bars hamburger" onclick="showlinks()"></i>
+                <i class="fa-solid fa-xmark crossicon" onclick="hidelinks()" style="display: none;"></i>
+                        </div>
         </div>
         <div class="links">
             <ul id="menuList">
@@ -62,10 +60,6 @@
                 <li><a href="underdevelopment.html">Contact</a></li>
             </ul>
         </div>
-
-
-
-        <div class="homepagestartbutton"></div>
     </nav>
     <!-- end navigation -->
 
