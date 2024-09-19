@@ -207,6 +207,11 @@ nav ul li a{
 #swiper-1{
     height: 60vh;
 }
+#swiper-1 .swiper-slide{
+    display: flex; /* Make each slide a flexbox */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
 /* #swiper-1 */
 #swiper-1 img{
     height: 100%;
@@ -225,10 +230,6 @@ nav ul li a{
     opacity: 1;
 
 }
-.swiper-slide .image-2{
-    /* transform: translateX(-120px); */
-}
-
 
 
 
