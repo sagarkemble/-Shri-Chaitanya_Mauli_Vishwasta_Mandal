@@ -82,6 +82,7 @@ const swiper2 = new Swiper("#swiper-2", {
       el: '.swiper-scrollbar',
     },
   });
+ 
   const swiper3 = new Swiper("#swiper-3", {
     // Optional parameters
     direction: 'horizontal',
