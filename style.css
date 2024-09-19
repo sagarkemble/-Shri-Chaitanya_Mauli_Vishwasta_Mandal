@@ -105,6 +105,7 @@ html,body{
     z-index: 3;
     position: absolute;
     background-color: var(--color2);
+    /* background-color: var(--color3); */
     backdrop-filter: blur(10px);
     transition: all 0.3s ;
     border-top: solid 2px var(--color1);
