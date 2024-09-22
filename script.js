@@ -90,9 +90,9 @@ const swiper2 = new Swiper("#swiper-2", {
     centeredSlides: true,
     spaceBetween: 30,
     loop: true,
-        autoplay: {
-        delay:2500,
-    },
+    //     autoplay: {
+    //     delay:2500,
+    // },
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
